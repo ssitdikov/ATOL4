@@ -1,0 +1,24 @@
+{
+  "name": "ssitdikov/atol5",
+  "description": "ATOL PHP API Client. Данная библиотека предназначена для работы с сервисом АТОЛ Онлайн",
+  "keywords": ["atol", "atol5", "api", "online", "php"],
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Salavat Sitdikov",
+      "email": "sitsalavat@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.1",
+    "guzzlehttp/guzzle": "^6.3",
+    "ext-json": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "SSitdikov\\ATOL\\": "src/",
+      "SSitdikov\\ATOL\\Tests\\": "tests/"
+    }
+  }
+}
