@@ -78,7 +78,7 @@ class TokenRequest implements RequestInterface
     public function getResponse(\stdClass $response): ResponseInterface
     {
         if (isset($response->error)) {
-            throw new \Exception($response->error->text);
+            return GeneralErrorFactory::getException($response->error);
         }
         return new TokenResponse($response);
     }
